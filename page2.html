@@ -1,14 +1,18 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
-
-<head>
+  <head>
+    <script src="mobile-detect.js"></script>
     <script src="https://aframe.io/releases/latest/aframe.min.js"></script>
-</head>
-
+    <title>A-Frame 物理演算の付与前</title>
+  </head>
 <body>
-    <a-scene>
-        <a-box color="red" rotation="0 0 0" position="0 0 0" width="1" height="1" width="1"></a-box>
-    </a-scene>
+  <script>
+    var md = new MobileDetect(window.navigator.userAgent);
+    if(md.mobile()){
+      document.write('モバイル端末');
+    }else{
+      document.write('NOT モバイル端末');
+    }
+  </script>
 </body>
-
 </html>

@@ -7,7 +7,7 @@ var game;
 //Webページが読み込まれたら
 addEventListener( 'load', function() {
     game = new Game(320,320);  //ゲームオブジェクトの作成
-    game.preload( 'puydesancy.jpg' );  //画像をプリロード
+    game.preload( 'suicide_face.jpg' );  //画像をプリロード
 
     //ゲームオブジェクトが読み込まれたら
     game.addEventListener( 'load', function() {
@@ -21,7 +21,7 @@ addEventListener( 'load', function() {
 
         /**スプライトの表示**/
         var playerSprite = new Sprite( 51, 55 );  //スプライトを作成
-        playerSprite.image = game.assets[ 'puydesancy.jpg' ];  //スプライトの画像ファイルを指定
+        playerSprite.image = game.assets[ 'suicide_face.jpg' ];  //スプライトの画像ファイルを指定
         scene.addChild( playerSprite );  //スプライトをシーンに追加（表示）
 
         return scene;

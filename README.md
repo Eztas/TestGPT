@@ -16,7 +16,8 @@ enchant.js => 挫折
 
 APIを使うとなると, お金がかかるのでやってられない.
 
-自作htmlで建物名を入力し, その建物名を元に, https://www.google.com/maps/search/+建物名　となるURLにリクエストを送る.
+自作htmlで建物名を入力し, その建物名を元に, https://www.google.com/maps/search/+建物名　
+となるURLにリクエストを送る.
 そして, そのURLにおけるhtmlソースの中にある, 住所を示すテキストを見つけ出し, それを自作htmlに表示させるというもの.
 
 例えば, XMLHttpRequestを使って, google mapの外部HTMLソースを取得することを試みましたが, どうやらセキュリティの理由で失敗.
